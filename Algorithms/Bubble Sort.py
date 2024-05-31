@@ -1,11 +1,11 @@
-N = input("Please type the length of the list: ")
+n = input("Please type the length of the list: ")
 try:
-    N = int(N)
+    n = int(n)
 except ValueError:
     print("Please type a valid number!")
 a = []
 try:
-    for x in range(0, N):
+    for x in range(0, n):
         y = int(input("Please type a number to be added to the list: "))
         a.append(y)
 except ValueError:
@@ -22,8 +22,9 @@ def bubble_sort(list1):
         The sorted list
     """
     try:
-        for i in range(1, N):
-            for j in range(0, N - 1):
+        m = len(a)
+        for i in range(1, m):
+            for j in range(0, m - 1):
                 if list1[j] > list1[j + 1]:
                     list1[j], list1[j + 1] = list1[j + 1], list1[j]
         return list1
