@@ -14,6 +14,11 @@ def get_list_from_user():
 
 
 def mergesort(a):
+    """Make small lists.
+            n: length of the list
+        Returns:
+            The merged list
+            """
     n = len(a)
     mid = n // 2
     if n <= 1:
@@ -29,6 +34,10 @@ def mergesort(a):
 
 
 def merge(ar1, ar2):
+    """Sorting the small lists and uniting them into a bigger one.
+                ar1 and ar2: the small lists that will be united
+            Returns:
+                ar3: the final result"""
     ar3 = []
     while ar1 and ar2:
         if ar1[0] <= ar2[0]:
